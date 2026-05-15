@@ -118,7 +118,7 @@ An MAE of ~14 runs means the model is off by roughly one over's worth of runs on
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/your-username/ipl-score-prediction.git
+git clone https://github.com/tech.indro/ipl-score-prediction.git
 cd ipl-score-prediction
 ```
 
