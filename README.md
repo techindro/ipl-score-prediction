@@ -196,5 +196,4 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 **[Shubham Patel]**  
 B.Tech Computer Science & Engineering  
-[Your College Name]  
-GitHub: [@your-username](https://github.com/your-username)
+GitHub: [@tech.indro](https://github.com/tech.indro)
