@@ -14,16 +14,16 @@ Traditional run-rate extrapolation ignores context like:
 - How many wickets have fallen
 - The historical performance of teams at a particular venue
 
-This project uses a **multi-layer feedforward neural network** (TensorFlow + Keras) trained on IPL ball-by-ball data from 2008–2017 to capture these patterns and make accurate predictions.
+This project uses a **multi-layer feedforward neural network** (TensorFlow + Keras) trained on IPL ball-by-ball data for the 2026 season to capture these patterns and make accurate predictions.
 
 ---
 
 ## 📊 Dataset
 
 - **Source:** [IPL Dataset on Kaggle](https://www.kaggle.com/datasets/nowke9/ipldata)
-- **Seasons:** 2008 to 2017
+- **Season:** 2026 (Mock Data generated via script)
 - **Format:** Ball-by-ball records (one row per ball bowled)
-- **Size:** ~76,000 rows
+- **Size:** 5,000 rows
 
 ### Key Features Used
 
@@ -118,7 +118,7 @@ An MAE of ~14 runs means the model is off by roughly one over's worth of runs on
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/your-username/ipl-score-prediction.git
+git clone https://github.com/tech.indro/ipl-score-prediction.git
 cd ipl-score-prediction
 ```
 
@@ -142,7 +142,7 @@ python src/predict.py \
   --bat_team "Chennai Super Kings" \
   --bowl_team "Royal Challengers Bangalore" \
   --batsman "MS Dhoni" \
-  --bowler "AB de Villiers" \
+  --bowler "Yuzvendra Chahal" \
   --runs 78 \
   --wickets 2 \
   --overs 10.0 \
@@ -169,7 +169,7 @@ jupyter notebook notebooks/
 
 ## 📉 Limitations
 
-- Dataset covers only 2008–2017 — team rosters have changed significantly since.
+- Currently uses a mock dataset for the 2026 season.
 - No weather, toss result, or pitch condition data is included.
 - Point estimate only — no prediction confidence interval.
 - Player performance is assumed stationary across seasons.
@@ -178,7 +178,7 @@ jupyter notebook notebooks/
 
 ## 🔮 Future Improvements
 
-- Retrain on more recent IPL seasons (2018–2024)
+- Replace mock data with a real dataset for the 2026 season once available
 - Add LSTM-based model for ball-by-ball sequence modelling
 - Include toss, weather, and team form features
 - Deploy as a REST API using FastAPI or Flask
@@ -191,10 +191,3 @@ jupyter notebook notebooks/
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
-
-## 🙋 Author
-
-**[Your Name]**  
-B.Tech Computer Science & Engineering  
-[Your College Name]  
-GitHub: [@your-username](https://github.com/your-username)

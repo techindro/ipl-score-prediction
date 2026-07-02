@@ -10,7 +10,7 @@ Usage:
         --bat_team "Chennai Super Kings" \
         --bowl_team "Royal Challengers Bangalore" \
         --batsman "MS Dhoni" \
-        --bowler "AB de Villiers" \
+        --bowler "Yuzvendra Chahal" \
         --runs 78 \
         --wickets 2 \
         --overs 10.0 \
@@ -95,7 +95,7 @@ def main():
     print()
 
     score = predict(user_input)
-    print(f"  ► Predicted Total: {score} runs\n")
+    print(f"  -> Predicted Total: {score} runs\n")
 
 
 if __name__ == '__main__':
